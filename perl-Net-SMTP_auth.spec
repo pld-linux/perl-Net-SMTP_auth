@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SMTP_auth
 Summary:	Simple Mail Transfer Protocol Client with AUTHentication
-Summary(pl):	Klient SMTP (Simple Mail Transfer Protocol) z Autentykacj±
+Summary(pl):	Klient SMTP (Simple Mail Transfer Protocol) z uwierzytelnianiem (SMTP AUTH)
 Name:		perl-Net-SMTP_auth
 Version:	0.07
 Release:	1
@@ -27,19 +27,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This module implements a client interface to the SMTP and ESMTP
 protocol AUTH service extension, enabling a perl5 application to talk
-to and authenticate against SMTP servers. This documentation assumes
-that you are familiar with the concepts of the SMTP protocol described
-in RFC821 and with the AUTH service extension described in RFC2554.
-
-A new Net::SMTP_auth object must be created with the new method. Once
-this has been done, all SMTP commands are accessed through this
-object.
+to and authenticate against SMTP servers.
 
 The Net::SMTP_auth class is a subclass of Net::SMTP, which itself is a
 subclass of Net::Cmd and IO::Socket::INET.
 
-#%description -l pl
-#TODO
+%description -l pl
+Ten modu³ implementuje interfejs kliencki do rozszerzenia AUTH
+protoko³ów SMTP i ESMTP, umo¿liwiaj±c perlowym aplikacjom rozmawianie
+i uwierzytelnianie wzglêdem serwerów SMTP.
+
+Klasa Net::SMTP_auth jest podklas± Net::SMTP, która z kolei jest
+podklas± Net::Cmd i IO::Socket::INET.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
