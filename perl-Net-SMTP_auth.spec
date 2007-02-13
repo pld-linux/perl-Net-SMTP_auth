@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	SMTP_auth
 Summary:	Simple Mail Transfer Protocol Client with AUTHentication
-Summary(pl.UTF-8):   Klient SMTP (Simple Mail Transfer Protocol) z uwierzytelnianiem (SMTP AUTH)
+Summary(pl.UTF-8):	Klient SMTP (Simple Mail Transfer Protocol) z uwierzytelnianiem (SMTP AUTH)
 Name:		perl-Net-SMTP_auth
 Version:	0.07
 Release:	2
