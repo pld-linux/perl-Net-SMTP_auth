@@ -8,13 +8,13 @@
 Summary:	Simple Mail Transfer Protocol Client with AUTHentication
 Summary(pl.UTF-8):	Klient SMTP (Simple Mail Transfer Protocol) z uwierzytelnianiem (SMTP AUTH)
 Name:		perl-Net-SMTP_auth
-Version:	0.07
-Release:	2
+Version:	0.08
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	926e9885a45a190d9c991f138d448914
+# Source0-md5:	23a911893c92c7c26ab9a78882691d9c
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
